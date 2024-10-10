@@ -11,7 +11,6 @@ function calculateTotalSpentByCategory(transactions) {
     result[category] += price;
   });
 
-  return;
   return Object.keys(result).map((category) => ({
     category: category,
     totalSpent: result[category],
